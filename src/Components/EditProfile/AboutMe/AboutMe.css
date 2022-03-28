@@ -1,0 +1,29 @@
+.input-container-bio{
+    height: 210px;
+    width: 600px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins' ;
+  font-size: 12px;
+  color: var(--Pepolls-light-grey);
+  background-color: white;
+
+
+}
+
+.input-container-soc{
+    height: 160px;
+    width: 600px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins' ;
+  font-size: 12px;
+  color: var(--Pepolls-light-grey);
+  background-color: white;
+
+}
+.longbio{
+    height: 60px;
+}

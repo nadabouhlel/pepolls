@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #F6F6F6;
+  --Pepolls-color : #0857E0 ;
+  --Pepolls-light-grey :#8F9BB1;
+  font-family: 'Poppins' !important;
+  --Pepolls-dark-blue : #1A2552;
+
+}

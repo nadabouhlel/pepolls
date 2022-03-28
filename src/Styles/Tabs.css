@@ -1,0 +1,26 @@
+.nav{
+    background-color: white;
+height: 60px;
+   /* margin-left: -100px !important;*/
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+}
+
+.edit-profile-logo{
+    
+    background-color: red;
+}
+
+.tabs{
+
+    padding-top: 12px;
+}
+
+.tab-label{
+    font-family: 'Poppins' !important;
+    color: var(  --Pepolls-dark-blue  ) !important;
+    width: 200px ;
+    
+}

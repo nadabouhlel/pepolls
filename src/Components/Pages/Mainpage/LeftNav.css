@@ -1,0 +1,30 @@
+.left-nav-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+min-width: 300px;
+height: 300px;
+margin-left: 80px;
+margin-top: 100px;
+position: fixed;
+border-radius: 10px;
+
+
+
+}
+
+.routes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+font-size: small;
+
+}
+
+.navigation {
+    color: var(  --Pepolls-dark-blue  );
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}

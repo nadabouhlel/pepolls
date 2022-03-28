@@ -1,0 +1,17 @@
+.logo{
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.navbar{
+        position: fixed;
+height: 70px;
+ margin-top: -45px;  
+
+}
+
+.tabs-main{
+
+    max-width:70%;
+}

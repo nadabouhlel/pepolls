@@ -1,0 +1,137 @@
+
+
+.input-container {
+  height: 320px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins' ;
+font-size: 12px;
+color: var(--Pepolls-light-grey);
+background-color: white;
+
+
+}
+
+.input-field{
+    justify-content: center;
+display: block;
+margin-top: 20px;
+border: none;
+
+
+    }
+
+
+
+label {
+margin-left: 30px;
+
+
+}
+
+.text{
+    margin-left: 30px;
+    padding: 0px;
+}
+
+.myidentity{
+    color: var(  --Pepolls-dark-blue  );
+    font-family: 'Poppins' ;
+font-size: 18px;
+padding-top: 20px;
+margin-bottom: 0px;
+}
+
+.check{
+    font-size: 12px;
+margin-top: 0px;
+}
+
+input {
+    margin-left: 100px;
+    width: 250px;
+padding: 8px;
+position: relative;
+font-family: 'Poppins' ;
+border:none;
+margin-bottom: 4px;
+outline: none;
+}
+
+.select {
+    margin-left: 100px;
+    width: 250px;
+    padding: 8px;
+    font-family: 'Poppins' ;
+    color: var(--Pepolls-light-grey);
+    border: none;
+    outline: none;
+}
+option {
+    color: var(  --Pepolls-dark-blue  );
+
+}
+
+
+
+::placeholder{
+color: #F0F0F0;
+}
+.contact-icon{
+    margin-left: 30px;
+}
+
+.links-container{
+    height: 220px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins' ;
+font-size: 12px;
+color: var(--Pepolls-light-grey);
+background-color: white;
+}
+
+.button{
+    background-color: white;
+    height: 90px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins' ;
+  margin-top: 20px;
+
+}
+
+.change{
+    background-color: yellow;
+    align-items: center;
+  justify-content: center;
+  font-family: 'Poppins' ;
+  border-radius: 20px;
+  border: none;
+  width: 280px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--Pepolls-color);
+  padding: 15px;
+  width: 500px;
+  margin-left: 40px;
+  margin-top: 20px;
+
+}
+
+.pic{
+background-color: black;
+margin-top: 45px;
+border-radius: 50%;
+height: 120px;
+width: 120px;
+margin-left: 35%;
+
+}
+

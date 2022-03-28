@@ -1,0 +1,19 @@
+.home {
+max-width: 600px;
+margin-left: 30%;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+margin-bottom: 100px;
+margin-top: -70px;
+}
+.home-navbar{
+    width: 600px;
+    height: 0px;
+    
+}
+.home-network-feed{
+    margin-top: 90px;
+
+}
