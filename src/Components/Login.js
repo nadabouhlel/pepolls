@@ -1,35 +1,33 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useMoralis } from "react-moralis";
 import Moralis from "moralis";
 import "../Styles/Login.css";
-import MetaMask_Fox from "../Images/MetaMask_Fox.png";
-import LogoPepolls from "../Images/LogoPepolls.png";
+import MetaMask_Fox from "../Images/MetaMask_Fox.svg";
+import Logo from "../Images/Logo.svg";
 import { Button } from "@mui/material";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import EN from "../Images/EN.png";
-import FR from "../Images/FR.png";
+import EN from "../Images/EN.svg";
+import FR from "../Images/FR.svg";
 import { useNavigate, useLocation, Navigate } from "react-router-dom";
 import Verify from "../Components/Verify";
 import { connect } from "react-redux";
-import {login} from '../Redux/Action/AuthAction'
-import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { login } from "../Redux/Action/AuthAction";
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 function Login() {
-
-  const key = localStorage.key(1); 
+  const key = localStorage.key(1);
   let user = localStorage.getItem(key);
-
 
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(login(user))
-  }
+    dispatch(login(user));
+  };
 
-/*
+  /*
   async function login() {
     console.log("login clicked");
     let user = Moralis.User.current();
@@ -47,12 +45,11 @@ function Login() {
    }
 */
 
-
-
   const { authenticate, isAuthenticated } = useMoralis();
   //console.log( localStorage.key(1))
- 
-{/* 
+
+  {
+    /* 
  
 
 const loggedIn = useSelector(state => state.loggedIn);
@@ -60,19 +57,17 @@ const dispatch = useDispatch();
             
 console.log(loggedIn)
 
-*/}
-if (isAuthenticated ) {
-
-  console.log('eyh tekhdem')
-
-
-} 
-
+*/
+  }
+  if (isAuthenticated) {
+    console.log("eyh tekhdem");
+    console.log(Moralis.User.current());
+  }
 
   return (
     <>
       <div className="sider">
-        <img src={LogoPepolls} alt="logo pepolls" className="logopepolls" />
+        <img src={Logo} alt="logo pepolls" className="logopepolls" />
 
         <div className="login">
           <img
@@ -80,12 +75,12 @@ if (isAuthenticated ) {
             alt="logo metamask"
             className="logometamask"
           />
-<div>
-  <form onSubmit={submitHandler}>
-          <button className="connect" type="submit" onClick={(authenticate ) }>
-            Connect via MetaMask
-          </button>
-       </form >  
+          <div>
+            <form onSubmit={submitHandler}>
+              <button className="connect" type="submit" onClick={authenticate}>
+                Connect via MetaMask
+              </button>
+            </form>
           </div>
           <div className="link">
             <a
@@ -122,7 +117,7 @@ if (isAuthenticated ) {
     </>
   );
 }
-const mapDispatchToprops = dispatch => ({ 
-  login: loggedIn => dispatch(login(loggedIn))
-})
-export default connect(null, mapDispatchToprops) (Login);
+const mapDispatchToprops = (dispatch) => ({
+  login: (loggedIn) => dispatch(login(loggedIn)),
+});
+export default connect(null, mapDispatchToprops)(Login);

@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { NavLink } from "react-router-dom";
 import "../HomeNav/HomeNavbar.css";
+import { Navbar } from "react-bootstrap";
 
 export default function HomeNavbar() {
   return (
