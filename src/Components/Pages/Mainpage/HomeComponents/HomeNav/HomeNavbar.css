@@ -5,10 +5,14 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  padding-top: 10px;
-  height: 60px;
+  height: 70px;
 }
+.middle-home-nav{
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
+}
 /* .fixed-content{
   top: 0;
   bottom:0;

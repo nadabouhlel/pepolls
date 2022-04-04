@@ -1,0 +1,152 @@
+.settings-nav {
+  position: fixed;
+  padding-top: 10px;
+  height: 70px;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo-nav-settings {
+  width: 100px;
+  
+}
+.privacy-settings-container {
+  height: 180px;
+  width: 600px;
+  margin-left: 30%;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.myaudiance-settings-container {
+  height: 400px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+.contact-settings-container {
+  height: 200px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.desactivation-settings-container {
+  height: 150px;
+  width: 600px;
+  margin-left: 30%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.desactivation-account-button {
+  background-color: white;
+  height: 50px;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  border-radius: 20px;
+  margin-left: 12%;
+  color: var(--Pepolls-dark-blue);
+  border: none;
+  background-color: #f3f4f5;
+}
+.label-audience {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: var(--Pepolls-dark-blue);
+  font-size: 13px;
+
+}
+.input-audience {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: space-between;
+  margin-left: -100px;
+  color: var(--Pepolls-light-grey);
+  font-size: 11px;
+
+}
+.container-audience {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+}
+.label-contact {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-between;
+  height: 60px;
+  margin-left: 10px;
+  color: var(--Pepolls-dark-blue);
+  font-size: 13px;
+}
+.input-contact {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  justify-content: space-between;
+  margin-left: -100px;
+  color: var(--Pepolls-light-grey);
+  font-size: 11px;
+}
+.container-contact {
+  display: flex;
+  flex-direction: row;
+}
+.label-privacy {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-between;
+  margin-left: 10px;
+  color: var(--Pepolls-dark-blue);
+  font-size: 13px;
+margin-top: 8px;
+}
+.input-privacy {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  justify-content: space-between;
+  margin-left: -100px;
+  color: var(--Pepolls-light-grey);
+  font-size: 11px;
+
+}
+.container-privacy {
+  display: flex;
+  flex-direction: row;
+}
+.form-text{
+  font-size: 12px;
+  margin-top: 0px;
+  color: var(--Pepolls-light-grey);
+
+}
+.select-settings{
+  margin-left: 80px;
+  width: 215px;
+  padding: 8px;
+  font-family: "Poppins";
+  color: var(--Pepolls-light-grey);
+  border: none;
+  outline: none;
+  text-indent: 67px;
+
+
+
+
+}

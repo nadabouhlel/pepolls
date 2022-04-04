@@ -12,22 +12,26 @@ import Trends from './left-nav-components/Trends'
 import Messages from './left-nav-components/Messages'
 import Notifications from './left-nav-components/Notifications'
 import HomeNavbar from './HomeComponents/HomeNav/HomeNavbar'
+import AddPostCard from './right-nav-components/NewPollComponents/AddPostCard'
+import NewPoll from './right-nav-components/NewPollComponents/NewPoll'
+
 function MainPage() {
   return (
     
 <div className='grid'>
  {/* <MainNav />   */}
 
- <LeftNav /> 
+  <LeftNav /> 
 <RightNav />
-
+  
 
 <Routes>
 <Route  path="Home/*" element={<Home />} />
-<Route  path="Search" element={<Search />} />
+<Route  path="Search/*" element={<Search />} />
 <Route  path="Trends" element={<Trends />} />
 <Route  path="Messages" element={<Messages />} />
 <Route  path="Notifications/*" element={<Notifications />} />
+<Route  path="NewPoll" element={<NewPoll />} />
 
 
 <Route  path="nada" element={<HomeNavbar />} />

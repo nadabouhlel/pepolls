@@ -12,14 +12,21 @@ import "../../SearchComponents/SearchNavbar/SearchNav.css";
 import "../MessageNavbar/MessageNav.css";
 import newmsg from "../../../../../Images/newmsg.svg";
 import loupe from "../../../../../Images/loupe.svg";
+import { useNavigate } from "react-router-dom";
+
 export default function MessageNav() {
+  const navigate = useNavigate();
+
+  const mainpage = () => {
+    navigate("/mainpage/Home/Network");
+  };
   return (
     <div className="home-nav-fix-pos">
       <Box sx={{ width: "100%" }}>
         <Box className="middle-home-nav" sx={{ backgroundColor: "white" }}>
           <Tabs centered>
             <Navbar className="trends-nav">
-              <img src={Logo} alt="logo pepolls" className="logo" />
+              <img onClick={mainpage} src={Logo} alt="logo pepolls" className="logo" />
 
               <input
                 type="search"

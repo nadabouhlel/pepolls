@@ -1,0 +1,20 @@
+.search-middle-nav{
+    font-family: "Poppins" !important;
+    color: var(--Pepolls-dark-blue) !important;
+    width: 225px;
+        align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    height: 40px;
+    border-radius: 60%;
+}
+
+.middle-search-nav{
+border-radius: 20px;
+
+
+}
+.search-polls-feed {
+    margin-top: 10px;
+}

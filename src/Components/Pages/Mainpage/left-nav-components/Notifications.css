@@ -1,0 +1,85 @@
+.notif-card-container{
+    background-color: white;
+    width: 450px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+span {
+    font-weight: bolder;
+    color: var(  --Pepolls-dark-blue  );
+font-size: 14px;
+}
+
+.notif-update-time{
+    color: var(--Pepolls-light-grey);
+    font-size: 12px;
+
+}
+
+.notif-update-text{
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.notif-update-header{
+    display: flex;
+    flex-direction: row;
+align-items: center;    
+}
+.notif-update-text-header{
+    margin-top: 15px;
+/* margin-left: 10px;*/
+}
+.notif-action{
+font-size: 13px;
+
+}
+.requests-card-container{
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 70px;
+width: 450px;
+border-radius: 10px;
+
+}
+.debate-card-container{
+    background-color: white;
+    width: 450px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+.notif-requests-vote-buttons{
+    background-color: #F6F6F6;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    bottom: 60px;
+border-radius: 30px;
+display: inline-flex;
+margin-left: 70%;
+margin-top: 10px;
+}
+
+
+
+
+.search-user-button{
+    margin-left: 30%;
+  
+ height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: white;
+    border-width: 1px;
+    border: 1.5px solid #E4E0E0 ;
+    margin-top: 15px;
+}

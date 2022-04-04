@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import insta from "../../../Images/insta.png";
 import link from "../../../Images/link.png";
 import { Navigate } from "react-router-dom";
-import "../AboutMe/AboutMe.css"
+import "../AboutMe/AboutMe.css";
 function AboutMe() {
   const formik = useFormik({
     initialValues: {
@@ -15,9 +15,9 @@ function AboutMe() {
       experience: "",
       job: "",
       level: "",
-      field:"",
-      country:"",
-      status:"",
+      field: "",
+      country: "",
+      status: "",
     },
     validationSchema: Yup.object({
       shortbio: Yup.string().max(20, "less than 20").required("required"),
@@ -26,17 +26,16 @@ function AboutMe() {
       experience: Yup.string().max(15, "less than 10").required("required"),
       job: Yup.string().max(10, "less than 10").required("required"),
       level: Yup.string().required("required"),
-      field:Yup.string().max(10, "less than 10").required("required"),
-      country:Yup.string().max(10, "less than 10").required("required"),
-      status:Yup.string().required("required"),
+      field: Yup.string().max(10, "less than 10").required("required"),
+      country: Yup.string().max(10, "less than 10").required("required"),
+      status: Yup.string().required("required"),
     }),
     onSubmit: (values) => {
       console.log(values);
-   
     },
   });
   //console.log(formik.touched)
- 
+
   return (
     <>
       {/* biography */}
@@ -49,10 +48,12 @@ function AboutMe() {
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-              <div>
-                <label>short Bio :</label>
+            <div className="container-jdid">
+              <div className="label-bio-jdida">
+                <label>Short Bio :</label>
+                <label>Long Bio :</label>
+              </div>
+              <div className="input-bio">
                 <input
                   id="shortbio"
                   name="shortbio"
@@ -65,12 +66,8 @@ function AboutMe() {
                 {formik.touched.shortbio && formik.errors.shortbio ? (
                   <a>{formik.errors.shortbio}</a>
                 ) : null}
-              </div>
-
-              <div>
-                <label>longbio :</label>
                 <input
-                className="longbio"
+                  className="longbio"
                   id="longbio"
                   name="longbio"
                   type="text"
@@ -88,17 +85,20 @@ function AboutMe() {
 
           {/* Professional */}
 
-          <div className="input-container-bio">
+          <div className="input-container-pro">
             <div className="text">
               <p className="myidentity">Professional</p>
               <p className="check">
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-            <div>
-                <label for="work"> Work Status</label>
+            <div className="container-pro">
+              <div className="label-pro">
+                <label>Work Status :</label>
+                <label>Experience :</label>
+                <label>Current job :</label>
+              </div>
+              <div className="input-pro">
                 <select
                   className="select"
                   name="work"
@@ -118,11 +118,6 @@ function AboutMe() {
                 {formik.touched.work && formik.errors.work ? (
                   <a>{formik.errors.work}</a>
                 ) : null}
-              </div>
-
-           
-              <div>
-                <label>Experience :</label>
                 <input
                   id="experience"
                   name="experience"
@@ -135,14 +130,11 @@ function AboutMe() {
                 {formik.touched.experience && formik.errors.experience ? (
                   <a>{formik.errors.experience}</a>
                 ) : null}
-              </div>
-              <div>
-                <label>Current job :</label>
                 <input
                   id="job"
                   name="job"
                   type="text"
-                  placeholder="jj/mm/aaaa"
+                  placeholder="Type your Current job"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.job}
@@ -151,22 +143,24 @@ function AboutMe() {
                   <a>{formik.errors.job}</a>
                 ) : null}
               </div>
-           
             </div>
           </div>
- {/* education */}
+          {/* education */}
 
- <div className="input-container-bio">
+          <div className="input-container-pro">
             <div className="text">
               <p className="myidentity">Educational</p>
               <p className="check">
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-            <div>
-                <label for="work"> Level</label>
+            <div className="container-pro">
+              <div abel-proclassName="l">
+                <label>Level :</label>
+                <label>Field :</label>
+                <label>Country :</label>
+              </div>
+              <div className="input-pro">
                 <select
                   className="select"
                   name="level"
@@ -178,7 +172,7 @@ function AboutMe() {
                   <option value="none" selected>
                     {" "}
                     level
-                                      </option>
+                  </option>
                   <option value="Graduate">Graduate</option>
                   <option value="UnGraduate">UnGraduate</option>
                   <option value="other">other</option>
@@ -186,11 +180,6 @@ function AboutMe() {
                 {formik.touched.level && formik.errors.level ? (
                   <a>{formik.errors.level}</a>
                 ) : null}
-              </div>
-
-           
-              <div>
-                <label>Field :</label>
                 <input
                   id="field"
                   name="field"
@@ -203,9 +192,6 @@ function AboutMe() {
                 {formik.touched.field && formik.errors.field ? (
                   <a>{formik.errors.field}</a>
                 ) : null}
-              </div>
-              <div>
-                <label>Country :</label>
                 <input
                   id="country"
                   name="country"
@@ -219,25 +205,25 @@ function AboutMe() {
                   <a>{formik.errors.country}</a>
                 ) : null}
               </div>
-           
             </div>
           </div>
-        
-{/* social */}
 
-<div className="input-container-soc">
+          {/* social */}
+
+          <div className="input-container-soc">
             <div className="text">
               <p className="myidentity">Social</p>
               <p className="check">
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-            <div>
-                <label for="work"> Status</label>
+            <div className="container-pro">
+              <div className="label-pro">
+                <label> Status :</label>
+              </div>
+              <div className="input-pro">
                 <select
-                  className="select"
+                  className="select-social"
                   name="status"
                   id="status"
                   onChange={formik.handleChange}
@@ -247,7 +233,7 @@ function AboutMe() {
                   <option value="none" selected>
                     {" "}
                     status
-                                      </option>
+                  </option>
                   <option value="Married">Married</option>
                   <option value="Engaged">Engaged</option>
                   <option value="other">other</option>
@@ -256,17 +242,12 @@ function AboutMe() {
                   <a>{formik.errors.status}</a>
                 ) : null}
               </div>
-
-           
-            
-             
-           
             </div>
           </div>
           {/* save changes button  */}
 
           <div className="button">
-            <button className="change" type="submit"  >
+            <button className="change" type="submit">
               Savechanges
             </button>
           </div>

@@ -1,97 +1,82 @@
-.card{
-    width: 300px;
-    height: 230px;
-    border-radius: 10px;
-    font-family: 'Poppins' ;
-   box-shadow: none !important;
+.card {
+  width: 300px;
+  height: 230px;
+  border-radius: 10px;
+  font-family: "Poppins";
+  box-shadow: none !important;
+
 }
-.button-card{
-    border: 1.5px solid #E4E0E0 ;
-    border-radius: 20px;
-    background-color: white;
-    padding: 11.5px 20px 11.5px 20px;
-    margin-left: 0px;
-    width:130px ;
-    height: 40px;
-    color: var(  --Pepolls-dark-blue  );
-    font-family: 'Poppins' !important ;
+.button-card {
+  border: 1.5px solid #e4e0e0;
+  border-radius: 20px;
+  background-color: white;
+  padding: 11.5px 20px 11.5px 20px;
+  margin-left: 0px;
+  width: 130px;
+  height: 40px;
+  color: var(--Pepolls-dark-blue);
+  font-family: "Poppins" !important ;
 }
 
 .button-card:hover {
-    background-color: lightgray;
-    color: black ;
-
+  background-color: lightgray;
+  color: black;
 }
 
-
-.EditWallet{
-    justify-content:space-between;
-    display: flex;
-    padding:0 15px;
-    flex-direction: column;
-
-
-
-
-
+.EditWallet {
+  justify-content: space-between;
+  display: flex;
+  padding: 0 15px;
+  flex-direction: column;
 }
-.imgs-settings{
-    display: flex;
-    justify-content:space-between;
-    padding:0 15px;
-    flex-direction: column;
-    align-items:center;
-margin-left: -20px;
-
+.imgs-settings {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -20px;
 }
 
-
-.links{
-    display: flex;
-    flex-direction: row;
-
+.links {
+  display: flex;
+  flex-direction: row;
 }
 
+.social-media-links {
+  margin-top: 10px;
+}
 
-
-
-
-
-.numbers{
+.numbers {
   margin: 10px;
-  justify-content:space-around;
+  justify-content: space-around;
   display: flex;
 }
-.numbers-details{
-display: flex;
-flex-direction: column;
-align-items:center;
-font-size: 12px;
-
+.numbers-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
-.numbers-details p{
-    margin:0;
+.numbers-details p {
+  margin: 0;
 }
 
 .card-icons :hover {
-    background-color: lightgray;
-
+  background-color: lightgray;
 }
 
-.new-poll{
-   
-    align-items: center;
+.new-poll {
+  align-items: center;
   justify-content: center;
- margin-left: 10px;
-  font-family: 'Poppins' ;
+  margin-left: 10px;
+  font-family: "Poppins";
   border-radius: 20px;
   border: none;
   width: 280px;
-    height: 50px;
+  height: 45px;
   cursor: pointer;
   color: white;
   background-color: var(--Pepolls-color);
-  padding: 15px;
   margin-top: 10px;
-  
 }

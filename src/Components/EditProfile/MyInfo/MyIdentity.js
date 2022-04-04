@@ -6,6 +6,8 @@ import insta from "../../../Images/insta.png";
 import link from "../../../Images/link.png";
 import { useNavigate } from "react-router-dom";
 import plus from "../../../Images/plus.png";
+import pollupload from "../../../Images/pollupload.svg";
+
 
 function MyIdentity() {
   const navigate = useNavigate();
@@ -51,8 +53,7 @@ function MyIdentity() {
   return (
     <>
       {/* photo upload */}
-
-      <div className="links-container">
+<div className="links-container">
         <div>
           <div>
             <input
@@ -72,9 +73,10 @@ function MyIdentity() {
         </div>
       </div>
 
-      {/* my identity form */}
       <div>
         <form onSubmit={formik.handleSubmit}>
+          {/* my identity form */}
+
           <div className="input-container">
             <div className="text">
               <p className="myidentity">My identity</p>
@@ -82,10 +84,15 @@ function MyIdentity() {
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-              <div>
+            <div className="container-jdid">
+              <div className="label-jdida">
                 <label>Name :</label>
+                <label>Surname :</label>
+                <label>Pseudo :</label>
+                <label>Date of Birth :</label>
+                <label>Gender :</label>
+              </div>
+              <div className="input-jdida">
                 <input
                   id="name"
                   name="name"
@@ -98,10 +105,6 @@ function MyIdentity() {
                 {formik.touched.name && formik.errors.name ? (
                   <a>{formik.errors.name}</a>
                 ) : null}
-              </div>
-
-              <div>
-                <label>SurName :</label>
                 <input
                   id="SurName"
                   name="SurName"
@@ -114,10 +117,6 @@ function MyIdentity() {
                 {formik.touched.SurName && formik.errors.SurName ? (
                   <a>{formik.errors.SurName}</a>
                 ) : null}
-              </div>
-
-              <div>
-                <label>Pseudo :</label>
                 <input
                   id="Pseudo"
                   name="Pseudo"
@@ -130,10 +129,8 @@ function MyIdentity() {
                 {formik.touched.Pseudo && formik.errors.Pseudo ? (
                   <a>{formik.errors.Pseudo}</a>
                 ) : null}
-              </div>
-              <div>
-                <label>Date of Birth :</label>
                 <input
+                  className="select-date"
                   id="date"
                   name="date"
                   type="date"
@@ -145,9 +142,6 @@ function MyIdentity() {
                 {formik.touched.date && formik.errors.date ? (
                   <a>{formik.errors.date}</a>
                 ) : null}
-              </div>
-              <div>
-                <label for="gender"> Gender</label>
                 <select
                   className="select"
                   name="gender"
@@ -170,7 +164,6 @@ function MyIdentity() {
               </div>
             </div>
           </div>
-
           {/* my contact info form */}
 
           <div className="input-container">
@@ -180,10 +173,15 @@ function MyIdentity() {
                 Please check these information before continuing
               </p>
             </div>
-
-            <div className="input-field">
-              <div>
+            <div className="container-jdid">
+              <div className="label-jdida">
                 <label>Phone :</label>
+                <label>Email :</label>
+                <label>Country :</label>
+                <label>State :</label>
+                <label>Zip code :</label>
+              </div>
+              <div className="input-jdida">
                 <input
                   id="phone"
                   name="phone"
@@ -196,10 +194,6 @@ function MyIdentity() {
                 {formik.touched.phone && formik.errors.phone ? (
                   <a>{formik.errors.phone}</a>
                 ) : null}
-              </div>
-
-              <div>
-                <label>Email :</label>
                 <input
                   id="email"
                   name="email"
@@ -212,15 +206,11 @@ function MyIdentity() {
                 {formik.touched.email && formik.errors.email ? (
                   <a>{formik.errors.email}</a>
                 ) : null}
-              </div>
-
-              <div>
-                <label>Country :</label>
                 <input
                   id="country"
                   name="country"
                   type="text"
-                  placeholder="Type your Pseudo"
+                  placeholder="Type your country"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.country}
@@ -228,14 +218,11 @@ function MyIdentity() {
                 {formik.touched.country && formik.errors.country ? (
                   <a>{formik.errors.country}</a>
                 ) : null}
-              </div>
-              <div>
-                <label>State :</label>
                 <input
                   id="state"
                   name="state"
                   type="text"
-                  placeholder="jj/mm/aaaa"
+                  placeholder="Type your state"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.state}
@@ -243,9 +230,6 @@ function MyIdentity() {
                 {formik.touched.state && formik.errors.state ? (
                   <a>{formik.errors.state}</a>
                 ) : null}
-              </div>
-              <div>
-                <label>ZIP code :</label>
                 <input
                   id="code"
                   name="code"
@@ -261,48 +245,48 @@ function MyIdentity() {
               </div>
             </div>
           </div>
-
           {/* my links form */}
-
-          <div className="links-container">
+          <div className="input-container-links">
             <div className="text">
               <p className="myidentity">Links</p>
               <p className="check">
                 Please check these information before continuing
               </p>
             </div>
-
-            <div>
-              <div>
+            <div className="container-jdid">
+              <div className="input-jdida-links">
                 <img src={insta} alt="logo pepolls" className="contact-icon" />
-                <input
-                  id="insta"
-                  name="insta"
-                  type="url"
-                  placeholder="Type your insta link"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.insta}
-                />
-                {formik.touched.insta && formik.errors.insta ? (
-                  <a>{formik.errors.insta}</a>
-                ) : null}
-              </div>
-
-              <div>
-                <img src={link} alt="logo pepolls" className="contact-icon" />
-                <input
-                  id="link"
-                  name="link"
-                  type="url"
-                  placeholder="Type your link"
-                  onChange={formik.handleChange}
-                  onBlur={formik.handleBlur}
-                  value={formik.values.link}
-                />
-                {formik.touched.link && formik.errors.link ? (
-                  <a>{formik.errors.link}</a>
-                ) : null}
+                <div className="input-link">
+                  <input
+                    id="insta"
+                    name="insta"
+                    type="url"
+                    placeholder="Type your insta link"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.insta}
+                  />
+                  {formik.touched.insta && formik.errors.insta ? (
+                    <a>{formik.errors.insta}</a>
+                  ) : null}
+                </div>
+                <div>
+                  <img src={link} alt="logo pepolls" className="contact-icon" />
+                  <div className="input-link">
+                    <input
+                      id="link"
+                      name="link"
+                      type="url"
+                      placeholder="Type your link"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.link}
+                    />
+                    {formik.touched.link && formik.errors.link ? (
+                      <a>{formik.errors.link}</a>
+                    ) : null}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

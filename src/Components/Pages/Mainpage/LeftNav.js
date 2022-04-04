@@ -11,13 +11,13 @@ function LeftNav() {
   return (
     <div className="left-nav-container">
       <div className="routes">
-        <NavLink style={{ textDecoration: "none" }} to="Home">
+        <NavLink style={{ textDecoration: "none" }} to="Home/Network"  >
           <a className="navigation" href="">
             <img src={home} alt="" />
             Home
           </a>
         </NavLink>
-        <NavLink style={{ textDecoration: "none" }} to="Search">
+        <NavLink style={{ textDecoration: "none" }} to="Search/Polls">
           <a className="navigation" href="">
             <img src={search} alt="" /> Search
           </a>
@@ -32,7 +32,7 @@ function LeftNav() {
             <img src={msg} alt="" /> Messages
           </a>
         </NavLink>
-        <NavLink style={{ textDecoration: "none" }} to="Notifications">
+        <NavLink style={{ textDecoration: "none" }} to="Notifications/Updates">
           <a className="navigation" href="">
             <img src={notif} alt="" /> Notifications
           </a>

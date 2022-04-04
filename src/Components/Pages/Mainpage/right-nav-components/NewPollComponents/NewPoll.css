@@ -1,0 +1,62 @@
+.add-poll-container {
+  height: 400px;
+  width: 450px;
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: white;
+  margin-left: 2.25vw;
+}
+.new-poll-title {
+  height: 50px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Pepolls-dark-blue) !important;
+}
+.poll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.choice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Pepolls-dark-blue);
+  font-size: 13px;
+}
+.advanced-settings {
+  background-color: white;
+  height: 50px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  border-radius: 20px;
+  color: var(--Pepolls-dark-blue);
+  border: none;
+  background-color: #f3f4f5;
+}
+.input-question-container{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+margin-right: 100px;
+margin-bottom: 10px;
+}
+.nada{
+  display: none;
+
+  
+}
+.input-container-poll{
+  margin-bottom: 30px;
+}

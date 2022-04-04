@@ -1,8 +1,8 @@
 .right-nav-container{
-   /* background-color: yellow; */
     height: 240px ;
 width: 300px;
 position: fixed;
-margin-top: 100px;
-margin-left: 77%;
+margin-top: 7.5vw;
+margin-left: 70vw;
+
 }

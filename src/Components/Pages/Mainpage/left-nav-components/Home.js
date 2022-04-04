@@ -9,6 +9,7 @@ import HomeNetwork from "../HomeComponents/HomeLinks/HomeNetwork";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeTopics from "../HomeComponents/HomeLinks/HomeTopics";
 import HomeTrends from "../HomeComponents/HomeLinks/HomeTrends";
+import Settings from "./SettingsComponents/Settings";
 
 function Home() {
   return (
@@ -20,6 +21,8 @@ function Home() {
           <Route path="Network" element={<HomeNetwork />} />
           <Route path="Topics" element={<HomeTopics />} />
           <Route path="Trending" element={<HomeTrends />} />
+          <Route path="Settings" element={<Settings />} />
+
         </Routes>
       </div>
     </>
