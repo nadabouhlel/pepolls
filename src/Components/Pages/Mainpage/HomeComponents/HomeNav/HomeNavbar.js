@@ -7,11 +7,20 @@ import Box from "@mui/material/Box";
 import { NavLink } from "react-router-dom";
 import "../HomeNav/HomeNavbar.css";
 import { Navbar } from "react-bootstrap";
+import Logo from '../../../../../Images/Logo.svg';
+import { useNavigate } from "react-router-dom";
 
 export default function HomeNavbar() {
+  const navigate = useNavigate();
+
+  const mainpage = () => {
+    navigate("/mainpage/Home/Network");
+  };
   return (
     <div>
       <Box sx={{ width: "100%" }}>
+      <img onClick={mainpage} src={Logo} alt="logo pepolls" className="logohome" />
+
         <Box className="middle-home-nav" sx={{ backgroundColor: "white" }}>
           <Tabs className="home-nav-fix-pos">
             <NavLink

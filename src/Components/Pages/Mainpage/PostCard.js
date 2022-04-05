@@ -21,6 +21,9 @@ import yesvotetrue from "../../../Images/yesvotetrue.svg";
 import novotetrue from "../../../Images/novotetrue.svg";
 import trendtrue from "../../../Images/trendtrue.svg";
 import ss from "../../../Images/ss.jpg";
+import Statistics from '../Mainpage/Post-interactions/Statistics'
+import Share from '../Mainpage/Post-interactions/Share'
+
 
 export default function PostCard() {
   const [likeactive, setLikeactive] = useState(false);
@@ -158,10 +161,9 @@ export default function PostCard() {
 
         <div className="post-icons-stack">
           <Stack direction="row" spacing={1}>
-            <img src={stat} alt="logo pepolls" />
+           <Statistics /> 
             <img src={debate} alt="logo pepolls" />
-            <img src={share} alt="logo pepolls" />
-
+<Share />
             <div >
               {trendactive ? (
                 <div className="trend-icon" onClick={trendF}>
